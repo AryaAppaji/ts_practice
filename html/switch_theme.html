@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theme Switch</title>
+    <link rel="stylesheet" href="../css/light_theme.csss" id="cssFile" />
+  </head>
+  <body>
+    <a href="../index.html">Home</a>
+    <br /><br />
+
+    <label for="lightTheme">Light Theme</label>
+    <input
+      type="radio"
+      name="theme"
+      id="lightTheme"
+      value="light"
+      checked
+      onclick="activateLightTheme()"
+    />
+
+    <label for="darkTheme">Dark Theme</label>
+    <input
+      type="radio"
+      name="theme"
+      id="darkTheme"
+      value="dark"
+      onclick="activateDarkTheme()"
+    />
+
+    <p id="indicator">Light Theme Activated</p>
+
+    <script src="../compiled_files/switch_theme.js"></script>
+  </body>
+</html>

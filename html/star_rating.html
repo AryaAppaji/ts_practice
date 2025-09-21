@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #outerDiv {
+        display: flex;
+        flex-direction: row;
+        border: solid 2px black;
+      }
+
+      #innerDiv1,
+      #innerDiv2,
+      #innerDiv3,
+      #innerDiv4,
+      #innerDiv5 {
+        height: 200px;
+        border: solid 2px black;
+        gap: 10px;
+        width: 20%;
+        margin: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Home</a>
+
+    <br />
+    <br />
+
+    <div id="outerDiv">
+      <div id="innerDiv1" onclick="changeRating(1)"></div>
+      <div id="innerDiv2" onclick="changeRating(2)"></div>
+      <div id="innerDiv3" onclick="changeRating(3)"></div>
+      <div id="innerDiv4" onclick="changeRating(4)"></div>
+      <div id="innerDiv5" onclick="changeRating(5)"></div>
+    </div>
+
+    <br />
+
+    <button onclick="clearRating()">Clear</button>
+
+    <script src="../compiled_files/star_rating.js"></script>
+  </body>
+</html>

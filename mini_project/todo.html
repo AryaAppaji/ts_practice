@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeScript and JavaScript Practice - TODO App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="getItems()">
+    <center>
+      <h1>Welcome to my TODO App</h1>
+    </center>
+
+    <hr />
+    <fieldset>
+      <h1>Add Note</h1>
+
+      <form method="post" onsubmit="addItem(event)" name="todoForm">
+        <textarea name="text" id="" rows="10" cols="100"></textarea>
+        <input type="submit" value="Add Note" />
+      </form>
+    </fieldset>
+
+    <h1>My Items</h1>
+    <div id="todoList"></div>
+    <script src="todo.js"></script>
+  </body>
+</html>

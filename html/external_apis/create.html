@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeScript and JavaScript Practice - Create API</title>
+  </head>
+  <body>
+    <a href="../../index.html">Home</a><br><br>
+
+    <h1>Create API</h1>
+
+    <form method="post" name="createDevice" onsubmit="submitForm(event)">
+      <label for="deviceName">Device name</label>
+      <input type="text" name="deviceName" id="deviceName" />
+      <br></br>
+
+      <label for="deviceYear">Year of Release</label>
+      <input type="number" name="deviceYear" id="deviceYear" />
+      <br></br>
+
+      <label for="devicePrice">Device Price</label>
+      <input type="number" name="devicePrice" id="devicePrice" />
+      <br></br>
+
+      <label for="cpuModel">CPU Model</label>
+      <input type="text" name="cpuModel" id="cpuModel" />
+      <br></br>
+
+      <label for="diskSize">Disk Size</label>
+      <input type="text" name="diskSize" id="diskSize" />
+      <br></br>
+
+      <input type="submit" value="Submit">
+    </form>
+
+    <pre id="response">
+
+    </pre>
+    <script src="../../compiled_files/external_apis/create.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeScript and JavaScript Practice - Display Selected Options</title>
+    <style>
+      #selectedOptions {
+        margin-top: 15px;
+        padding: 0;
+        list-style: none;
+      }
+      #selectedOptions li {
+        display: inline-block;
+        background: #f0f0f0;
+        padding: 5px 10px;
+        margin: 5px;
+        border-radius: 5px;
+      }
+      #selectedOptions li span {
+        cursor: pointer;
+        margin-left: 8px;
+        color: red;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Home</a>
+    <br /><br />
+
+    <select
+      name="options"
+      id="optionBox"
+      onchange="getDropdownValue()"
+      multiple
+    >
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+      <option value="4">Option 4</option>
+    </select>
+
+    <!-- Container for showing selected options -->
+    <ul id="selectedOptions"></ul>
+
+    <script src="../compiled_files/display_selected_options.js"></script>
+  </body>
+</html>

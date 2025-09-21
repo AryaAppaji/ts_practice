@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeScript and JavaScript Practice - Form validation</title>
+  </head>
+  <body>
+    <a href="../index.html">Home</a>
+    <br /><br />
+
+    <form action="" name="demoForm" onsubmit="return validateForm(event)">
+      <input type="text" name="name" id="" placeholder="Enter name" />
+      <span id="error1" hidden></span>
+      <br /><br />
+
+      <input type="email" name="email" id="" placeholder="Enter email" />
+      <span id="error2" hidden></span>
+      <br /><br />
+
+      <input
+        type="password"
+        name="password"
+        id=""
+        placeholder="Enter Password"
+      />
+      <span id="error3" hidden></span>
+      <br /><br />
+
+      <input type="date" name="dob" id="" />
+      <span id="error4" hidden></span>
+      <br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+
+    <script src="../compiled_files/form_validation.js"></script>
+  </body>
+</html>
